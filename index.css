@@ -1,0 +1,46 @@
+body {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center; 
+  color: white;
+}
+
+.container {
+  width: 328px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.red {
+  background: rgba(255, 10, 10, .9  );
+  border-top-left-radius: 100%;
+
+}
+
+.yellow {
+  background: yellow;
+  border-top-right-radius: 100%;
+}
+
+.blue {
+  background: blue;
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  background: darkgreen;
+  border-bottom-right-radius: 100%;
+}
