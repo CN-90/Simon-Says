@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Simon Says</h1>
+  <h1>Simon Dice</h1>
   
   <div class='container'>
     <div data-color='red' class='red box'></div>
-    <div class='yellow box'></div>
-    <div class='blue box'></div>
-    <div class='green box'></div>
+    <div data-color='yellow' class='yellow box'></div>
+    <div data-color='blue' class='blue box'></div>
+    <div data-color='green' class='green box'></div>
+  </div>
+  <div id='btn-container'>
+    <button onclick='startGame()'>Start Game</button>  
   </div>
   <script src='index.js'></script>
 </body>

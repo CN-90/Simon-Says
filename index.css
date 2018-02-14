@@ -44,3 +44,17 @@ h1 {
   background: darkgreen;
   border-bottom-right-radius: 100%;
 }
+
+#btn-container {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5%;
+  background: darkgray;
+  font-weight: bold;
+}
