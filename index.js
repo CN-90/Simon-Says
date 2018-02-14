@@ -16,21 +16,17 @@ function setEventListeners(){
   for(let i = 0; i < squares.length; i++){
     squares[i].addEventListener('click', function(){
       playerSequence.push(this.dataset.color);
-      console.log(checkSequence());
+      if(!checkSequence()){
+        console.log('Game over!')
+      } else if(playerSequence.length === randomSequence.length){
+        nextRound();
+      }
     })
   }
 }
 
 function startGame(){
-  clearInterval(myInterval)
-  gameOver = false;
-  while(!gameOver){
-    addToSequence();
-    console.log(randomSequence)
-    if(randomSequence.length >= 1){
-      gameOver = true;
-    }
-  }
+  
 }
 
 function addToSequence(){
@@ -41,12 +37,15 @@ function addToSequence(){
 }
 
 function checkSequence(){
-  // Checks if the last colors in sequence match.
-  let lastPlayerSequence = playerSequence[playerSequence.length - 1]
-  let lastRandomSequence = randomSequence[randomSequence.length - 1]
-  return lastPlayerSequence === lastRandomSequence;
+  for(let i = 0; i < playerSequence.length; i++){
+    if(playerSequence[i] !== randomSequence[i]){
+      return false
+    }
+  }
+  return true;
 }
 
 function nextRound(){
   playerSequence = []
+  addToSequence();
 }
