@@ -9,6 +9,11 @@ h1 {
   color: white;
 }
 
+h4 {
+  text-align: center;
+  color: white;
+}
+
 .container {
   width: 328px;
   display: flex;
@@ -25,24 +30,30 @@ h1 {
 }
 
 .red {
-  background: rgba(255, 10, 10, .9  );
+  background: red;
   border-top-left-radius: 100%;
+  opacity: .5;
 
 }
 
 .yellow {
   background: yellow;
   border-top-right-radius: 100%;
+  opacity: .5;
+
 }
 
 .blue {
   background: blue;
   border-bottom-left-radius: 100%;
+  opacity: .5;
+
 }
 
 .green {
   background: darkgreen;
   border-bottom-right-radius: 100%;
+  opacity: .5;
 }
 
 #btn-container {

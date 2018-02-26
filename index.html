@@ -8,13 +8,29 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Simon Dice</h1>
-  
+  <h1>Simon Says</h1>
+  <h4 id="round">Round: - </h4>
   <div class='container'>
-    <div data-color='red' class='red box'></div>
-    <div data-color='yellow' class='yellow box'></div>
-    <div data-color='blue' class='blue box'></div>
-    <div data-color='green' class='green box'></div>
+    <div data-color='red' class='red box'>
+      <audio id="red-audio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></source> 
+      </audio>
+    </div>
+    <div data-color='yellow' class='yellow box'>
+      <audio id="yellow-audio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></source> 
+      </audio>
+    </div>
+    <div data-color='blue' class='blue box'>
+      <audio id="blue-audio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></source> 
+      </audio>
+    </div>
+    <div data-color='green' class='green box'>
+      <audio id="green-audio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></source> 
+      </audio>
+    </div>
   </div>
   <div id='btn-container'>
     <button onclick='nextRound()'>Start Game</button>  
